@@ -6,8 +6,8 @@ import os
 public_key = os.getenv("PUBLIC_KEY")
 
 # Create the EC2 KeyPair using the public key
-key_pair = aws.ec2.KeyPair("my-key-pair",
-    key_name="my-key-pair",
+key_pair = aws.ec2.KeyPair("new-key-pair",
+    key_name="new-key-pair",
     public_key=public_key)
 
 # Define the VPC and subnet configurations
